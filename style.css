@@ -10,11 +10,26 @@
   --amber:#C4732B;
   --line:#DBDFDC;
   --grid:rgba(31,78,121,0.05);
+  --topbar-bg:rgba(246,247,244,0.86);
   --display:'Space Grotesk', sans-serif;
   --body:'IBM Plex Sans', sans-serif;
   --mono:'IBM Plex Mono', monospace;
   --max:1080px;
   --edge:32px;
+}
+
+html[data-theme="dark"]{
+  --paper:#14181B;
+  --paper-raised:#1C2226;
+  --ink:#EDEFEF;
+  --ink-soft:#A9B2B8;
+  --ink-faint:#6B747A;
+  --blue:#6FA8D8;
+  --blue-soft:#5C8FB5;
+  --amber:#E0964A;
+  --line:#2A3136;
+  --grid:rgba(111,168,216,0.07);
+  --topbar-bg:rgba(20,24,27,0.86);
 }
 
 @media (max-width: 640px){
@@ -36,6 +51,7 @@ body{
   font-size:16px;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
+  transition:background-color .3s ease, color .3s ease;
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -61,9 +77,10 @@ p{ margin:0; }
   position:sticky; top:0; z-index:10;
   display:flex; align-items:center; justify-content:space-between;
   padding:18px var(--edge);
-  background:rgba(246,247,244,0.86);
+  background:var(--topbar-bg);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
+  transition:background-color .3s ease, border-color .3s ease;
 }
 .mark{ font-family:var(--mono); font-size:15px; font-weight:500; text-decoration:none; letter-spacing:0.04em; }
 .mark .dot{ color:var(--amber); }
@@ -79,6 +96,19 @@ p{ margin:0; }
 }
 .nav a:hover::after{ width:100%; }
 
+.theme-toggle{
+  display:flex; align-items:center; justify-content:center;
+  width:32px; height:32px; margin-right:6px;
+  background:none; border:1px solid var(--line); border-radius:50%;
+  color:var(--ink-soft); cursor:pointer; padding:0;
+  transition:border-color .2s ease, color .2s ease;
+}
+.theme-toggle:hover{ border-color:var(--blue); color:var(--blue); }
+.theme-toggle svg{ width:16px; height:16px; }
+.theme-toggle .icon-sun{ display:none; }
+html[data-theme="dark"] .theme-toggle .icon-moon{ display:none; }
+html[data-theme="dark"] .theme-toggle .icon-sun{ display:block; }
+
 .nav-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
 .nav-toggle span{ width:20px; height:1.5px; background:var(--ink); display:block; }
 
@@ -90,6 +120,7 @@ p{ margin:0; }
   }
   .nav.open{ max-height:300px; }
   .nav a{ padding:14px var(--edge); border-top:1px solid var(--line); }
+  .nav .theme-toggle{ margin:14px var(--edge); }
   .nav-toggle{ display:flex; }
 }
 
@@ -140,6 +171,41 @@ main{ max-width:var(--max); margin:0 auto; padding:0 var(--edge); }
 
 .crank{ animation:spin 6s linear infinite; }
 @keyframes spin{ to{ transform:rotate(360deg); } }
+
+.panel-svg{ width:100%; max-width:420px; height:auto; }
+.panel-rect{ fill:var(--paper-raised); stroke:var(--line); stroke-width:1; }
+.panel-header{ font-family:var(--mono); font-size:12.5px; fill:var(--ink-soft); letter-spacing:0.05em; }
+.status-dot{ fill:var(--amber); animation:pulse 2s ease-in-out infinite; }
+@keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:0.25; } }
+.gauge-bg{ fill:none; stroke:var(--line); stroke-width:9; }
+.gauge-fg{ fill:none; stroke-width:9; stroke-linecap:round; }
+.gauge-fg-1{ stroke:var(--blue); }
+.gauge-fg-2{ stroke:var(--amber); }
+.gauge-text{ font-family:var(--mono); font-size:19px; font-weight:600; fill:var(--ink); }
+.readout-val{ fill:var(--ink); font-weight:600; }
+.spark-line{ fill:none; stroke:var(--blue-soft); stroke-width:1.6; stroke-linejoin:round; stroke-linecap:round; }
+
+.nn-line{ stroke:var(--line); stroke-width:1; }
+.nn-node{ fill:var(--paper-raised); stroke-width:1.6; }
+.nn-node-in{ stroke:var(--ink); }
+.nn-node-hid{ stroke:var(--blue); }
+.nn-node-out{ stroke:var(--amber); fill:rgba(196,115,43,0.1); }
+
+.pulse-dot{ opacity:0; }
+.pulse-1{ fill:var(--blue); animation:pulse-move-1 2.4s ease-in-out infinite; }
+.pulse-2{ fill:var(--amber); animation:pulse-move-2 2.4s ease-in-out infinite 1.2s; }
+@keyframes pulse-move-1{
+  0%{ cx:70px; cy:130px; opacity:0; }
+  10%{ opacity:1; }
+  90%{ opacity:1; }
+  100%{ cx:210px; cy:163px; opacity:0; }
+}
+@keyframes pulse-move-2{
+  0%{ cx:210px; cy:163px; opacity:0; }
+  10%{ opacity:1; }
+  90%{ opacity:1; }
+  100%{ cx:350px; cy:165px; opacity:0; }
+}
 
 .title-block{
   margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
