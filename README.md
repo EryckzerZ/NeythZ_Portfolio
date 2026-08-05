@@ -11,11 +11,11 @@ no framework, deploys straight to GitHub Pages.
 
 ## Before you publish — replace these placeholders
 
-- [ ] `https://github.com/yourusername` — your real GitHub URLs (appears in
+- [ ] `https://github.com/EryckzerZ` — your real GitHub URLs (appears in
       the hero, each project card, and the footer)
-- [ ] `https://leetcode.com/yourusername` — your LeetCode profile
-- [ ] `youremail@example.com` — your email
-- [ ] `https://linkedin.com/in/yourusername` — your LinkedIn (or remove the
+- [ ] `https://leetcode.com/Nathanael_F` — your LeetCode profile
+- [ ] `nathanaelfrederick21@gmail.com` — your email
+- [ ] `https://linkedin.com/in/nathanfred` — your LinkedIn (or remove the
       link in the Contact section if you don't want to include it)
 - [ ] Project descriptions in the **Projects** section — swap in the real
       repo names/links once each project is pushed to GitHub
