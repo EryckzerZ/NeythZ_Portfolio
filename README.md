@@ -1,38 +1,28 @@
-# Portfolio — Nathanael Frederick Kristandi
+# Nathanael Frederick Kristandi — Portfolio
 
-A static, single-page portfolio site. Plain HTML/CSS/JS — no build step,
-no framework, deploys straight to GitHub Pages.
+Personal portfolio site showcasing my work as an Information Systems
+student — from internal dashboards and machine learning for predictive
+maintenance during my internship at Hitachi Construction Machinery
+Indonesia, to hands-on robotics projects like a wind-powered walking
+mechanism and a bipedal humanoid robot.
 
-## Files
+**Live site:** [EryckzerZ.github.io](https://EryckzerZ.github.io)
 
-- `index.html` — page content and structure
-- `style.css` — all styling (blueprint / technical-drafting theme)
-- `script.js` — mobile nav toggle + scroll-reveal animation
+## Sections
 
-## Before you publish — replace these placeholders
+- **About** — background and focus areas
+- **Experience** — internship at Hitachi Construction Machinery Indonesia
+- **Projects** — dashboards, predictive maintenance, robotics, and more
+- **Skills** — tools and technologies I work with
+- **Contact** — how to reach me
 
-- [ ] `https://github.com/EryckzerZ` — your real GitHub URLs (appears in
-      the hero, each project card, and the footer)
-- [ ] `https://leetcode.com/Nathanael_F` — your LeetCode profile
-- [ ] `nathanaelfrederick21@gmail.com` — your email
-- [ ] `https://linkedin.com/in/nathanfred` — your LinkedIn (or remove the
-      link in the Contact section if you don't want to include it)
-- [ ] Project descriptions in the **Projects** section — swap in the real
-      repo names/links once each project is pushed to GitHub
-- [ ] Dates in the **Experience** section if you'd like to add a start date
+## Built with
 
-## Run locally
+Plain HTML, CSS, and JavaScript — no framework, no build step. Deployed
+with GitHub Pages.
 
-Just open `index.html` in a browser — no server needed. Or, for live-reload
-while editing, run any static server, e.g.:
+## Contact
 
-```
-python3 -m http.server 8000
-```
-
-then visit `http://localhost:8000`.
-
-## Deploy
-
-See the GitHub Pages steps in the accompanying chat guide, or:
-Settings → Pages → Source: `main` branch, `/ (root)` folder → Save.
+- Email: nathanaelfrederick21@gmail.com
+- LinkedIn: [linkedin.com/in/nathanfred](https://linkedin.com/in/nathanfred)
+- GitHub: [@EryckzerZ](https://github.com/EryckzerZ)
