@@ -4,10 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nathanael Frederick Kristandi — Portfolio</title>
-<meta name="description" content="Portfolio of Nathanael Frederick Kristandi — Information Systems student working across dashboards, predictive maintenance, and robotics.">
+<meta name="description" content="Portfolio of Nathanael Frederick Kristandi — Automotive & Robotics Engineering student working across embedded systems, robotics, and machine learning.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    } catch (e) {}
+  })();
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,10 +26,15 @@
 <div class="frame-tick br" aria-hidden="true"></div>
 
 <header class="topbar">
-  <a href="#top" class="mark">N<span class="dot">·</span>F<span class="dot">·</span>K</a>
+  <a href="#top" class="mark">Nathanael F</a>
   <nav class="nav" id="nav">
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light/dark theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4" y1="12" x2="2" y2="12"/><line x1="22" y1="12" x2="20" y2="12"/><line x1="5" y1="5" x2="6.5" y2="6.5"/><line x1="17.5" y1="17.5" x2="19" y2="19"/><line x1="5" y1="19" x2="6.5" y2="17.5"/><line x1="17.5" y1="6.5" x2="19" y2="5"/></svg>
+    </button>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
+    <a href="#leadership">Leadership</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
@@ -35,262 +48,334 @@
 
   <!-- ============ HERO / SHEET 01 ============ -->
   <section class="sheet hero" id="hero">
-    <p class="eyebrow">Sheet 01 / 06 — Cover</p>
     <div class="hero-grid">
       <div class="hero-text">
         <h1>Nathanael Frederick<br>Kristandi</h1>
-        <p class="role">Information Systems student — building at the
-        intersection of software, data, and mechanical systems.</p>
-        <p class="lede">Currently interning in the Maintenance Division at
-        Hitachi Construction Machinery Indonesia, where I build monitoring
-        dashboards and predictive-maintenance tools. Outside of that, I
-        design walking mechanisms, build robots, and work through
-        competitive-programming problems for fun.</p>
+        <p class="role">Automotive &amp; Robotics Engineering student —
+        interested in robotics, machine learning, and embedded systems.</p>
+        <p class="lede">Final-year student at BINUS University, with
+        hands-on experience building robots, dashboards, and machine
+        learning models through academic projects and industry
+        internships. I also enjoy mentoring — leading robotics training
+        programs for fellow students.</p>
         <div class="hero-links">
           <a class="btn btn-primary" href="#projects">View projects</a>
-          <a class="btn btn-ghost" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/EryckzerZ" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
 
       <div class="hero-diagram" aria-hidden="true">
-        <svg viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" class="linkage-svg">
-          <!-- baseline -->
-          <line x1="20" y1="330" x2="400" y2="330" class="ln-base"/>
-          <g class="ticks">
-            <line x1="60" y1="325" x2="60" y2="335"/>
-            <line x1="140" y1="325" x2="140" y2="335"/>
-            <line x1="220" y1="325" x2="220" y2="335"/>
-            <line x1="300" y1="325" x2="300" y2="335"/>
-            <line x1="380" y1="325" x2="380" y2="335"/>
-          </g>
+        <svg viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" class="panel-svg">
+          <line x1="70" y1="130" x2="210" y2="90" class="nn-line"/>
+          <line x1="70" y1="130" x2="210" y2="163" class="nn-line"/>
+          <line x1="70" y1="130" x2="210" y2="236" class="nn-line"/>
+          <line x1="70" y1="130" x2="210" y2="309" class="nn-line"/>
+          <line x1="70" y1="205" x2="210" y2="90" class="nn-line"/>
+          <line x1="70" y1="205" x2="210" y2="163" class="nn-line"/>
+          <line x1="70" y1="205" x2="210" y2="236" class="nn-line"/>
+          <line x1="70" y1="205" x2="210" y2="309" class="nn-line"/>
+          <line x1="70" y1="280" x2="210" y2="90" class="nn-line"/>
+          <line x1="70" y1="280" x2="210" y2="163" class="nn-line"/>
+          <line x1="70" y1="280" x2="210" y2="236" class="nn-line"/>
+          <line x1="70" y1="280" x2="210" y2="309" class="nn-line"/>
+          <line x1="210" y1="90" x2="350" y2="165" class="nn-line"/>
+          <line x1="210" y1="90" x2="350" y2="240" class="nn-line"/>
+          <line x1="210" y1="163" x2="350" y2="165" class="nn-line"/>
+          <line x1="210" y1="163" x2="350" y2="240" class="nn-line"/>
+          <line x1="210" y1="236" x2="350" y2="165" class="nn-line"/>
+          <line x1="210" y1="236" x2="350" y2="240" class="nn-line"/>
+          <line x1="210" y1="309" x2="350" y2="165" class="nn-line"/>
+          <line x1="210" y1="309" x2="350" y2="240" class="nn-line"/>
 
-          <!-- foot path locus (decorative) -->
-          <ellipse cx="230" cy="300" rx="70" ry="26" class="foot-path"/>
-          <text x="228" y="345" class="cap-label">foot path</text>
+          <circle cx="70" cy="130" r="6" class="nn-node nn-node-in"/>
+          <circle cx="70" cy="205" r="6" class="nn-node nn-node-in"/>
+          <circle cx="70" cy="280" r="6" class="nn-node nn-node-in"/>
+          <circle cx="210" cy="90" r="6" class="nn-node nn-node-hid"/>
+          <circle cx="210" cy="163" r="6" class="nn-node nn-node-hid"/>
+          <circle cx="210" cy="236" r="6" class="nn-node nn-node-hid"/>
+          <circle cx="210" cy="309" r="6" class="nn-node nn-node-hid"/>
+          <circle cx="350" cy="165" r="6.5" class="nn-node nn-node-out"/>
+          <circle cx="350" cy="240" r="6.5" class="nn-node nn-node-out"/>
 
-          <!-- fixed ground pivot -->
-          <circle cx="150" cy="120" r="4" class="joint joint-ground"/>
-          <text x="128" y="108" class="pt-label">O₂</text>
+          <circle cx="70" cy="130" r="3" class="pulse-dot pulse-1"/>
+          <circle cx="210" cy="163" r="3" class="pulse-dot pulse-2"/>
 
-          <!-- static links of leg schematic -->
-          <line x1="150" y1="120" x2="230" y2="180" class="ln-link"/>
-          <line x1="230" y1="180" x2="200" y2="300" class="ln-link"/>
-          <line x1="230" y1="180" x2="300" y2="220" class="ln-link"/>
-          <line x1="300" y1="220" x2="230" y2="300" class="ln-link"/>
-
-          <circle cx="230" cy="180" r="3.5" class="joint"/>
-          <text x="240" y="176" class="pt-label">B</text>
-          <circle cx="300" cy="220" r="3.5" class="joint"/>
-          <text x="308" y="216" class="pt-label">C</text>
-          <circle cx="230" cy="300" r="4" class="joint joint-foot"/>
-          <text x="238" y="298" class="pt-label">foot</text>
-
-          <!-- rotating crank -->
-          <g class="crank" style="transform-origin: 150px 120px;">
-            <line x1="150" y1="120" x2="185" y2="95" class="ln-crank"/>
-            <circle cx="185" cy="95" r="3.5" class="joint joint-crank"/>
-          </g>
-
-          <text x="140" y="135" class="cap-label small">crank</text>
+          <text x="70" y="345" text-anchor="middle" class="cap-label">input</text>
+          <text x="210" y="345" text-anchor="middle" class="cap-label">hidden</text>
+          <text x="350" y="345" text-anchor="middle" class="cap-label">output</text>
         </svg>
       </div>
-    </div>
-
-    <div class="title-block">
-      <div><span class="tb-k">Scale</span><span class="tb-v">1:1</span></div>
-      <div><span class="tb-k">Drawn by</span><span class="tb-v">N.F.K.</span></div>
-      <div><span class="tb-k">Rev</span><span class="tb-v">A</span></div>
-      <div><span class="tb-k">Status</span><span class="tb-v">Active</span></div>
     </div>
   </section>
 
   <!-- ============ ABOUT / SHEET 02 ============ -->
   <section class="sheet" id="about">
-    <p class="eyebrow">Sheet 02 / 06 — About</p>
     <h2>About</h2>
     <div class="about-grid">
       <p class="about-text">
-        I'm an Information Systems student at Universitas Pelita Harapan
-        (UPH), currently completing an internship at PT. Hitachi
-        Construction Machinery Indonesia in the Maintenance Division.
-        My work sits between three areas I care about: turning messy
-        operational data into dashboards people actually use, applying
-        machine learning to predict equipment failure before it happens,
-        and designing physical mechanisms — from a wind-powered walking
-        robot built with no motors, to a bipedal humanoid on a Raspberry
-        Pi. I also spend time on competitive programming, mostly to keep
-        my problem-solving sharp.
+        I'm a final-year Automotive &amp; Robotics Engineering student at
+        BINUS University, with hands-on experience across embedded
+        systems, robotics, and machine learning. I like turning ideas into
+        working systems — whether that's a dashboard, a predictive model,
+        or a robot — and I've had the chance to lead teams and ship
+        results in both academic and professional settings.
       </p>
       <dl class="spec-list">
-        <div><dt>Based in</dt><dd>West Java, Indonesia</dd></div>
-        <div><dt>Institution</dt><dd>Universitas Pelita Harapan</dd></div>
-        <div><dt>Program</dt><dd>Information Systems</dd></div>
-        <div><dt>Currently</dt><dd>Intern, Maintenance Div. — HCMI</dd></div>
-        <div><dt>Focus</dt><dd>Dashboards · ML · Robotics</dd></div>
+        <div><dt>Based in</dt><dd>Tangerang, Indonesia</dd></div>
+        <div><dt>Institution</dt><dd>BINUS University — ASO School of Engineering</dd></div>
+        <div><dt>Program</dt><dd>Automotive &amp; Robotics Engineering</dd></div>
+        <div><dt>Focus</dt><dd>Embedded Systems · Robotics · ML</dd></div>
       </dl>
     </div>
   </section>
 
   <!-- ============ EXPERIENCE / SHEET 03 ============ -->
   <section class="sheet" id="experience">
-    <p class="eyebrow">Sheet 03 / 06 — Experience</p>
-    <h2>Experience</h2>
+    <h2>Work Experience</h2>
 
     <article class="work-order reveal">
       <div class="wo-head">
         <div>
-          <h3>Maintenance Division Intern</h3>
-          <p class="wo-org">PT. Hitachi Construction Machinery Indonesia — CIB-1 Section</p>
+          <h3>Research and Development</h3>
+          <p class="wo-org">PT Hitachi Construction Machinery Indonesia</p>
         </div>
-        <span class="wo-tag">In progress</span>
+        <span class="wo-tag">Feb – Aug 2026</span>
       </div>
       <ul class="wo-list">
-        <li>Built and shipped the Maintenance Monitoring System — four
-        internal dashboards (PM1 &amp; PM2 Achievement, Attendance,
-        Suggestion System) on the LANDCROS platform — replacing manual,
-        Excel-based reporting workflows.</li>
-        <li>Developed a predictive maintenance (PDM) pipeline using
-        machine learning on sensor data from ABB SCU-100 motors, to flag
-        early signs of failure.</li>
-        <li>Represented the division in a Pre Summer Course collaborative
-        project with TMSUK (Japan), designing a wind-powered walking
-        mechanism.</li>
+        <li>Built two web dashboards — Preventive &amp; Predictive
+        Maintenance — with Python and Streamlit, connected to PostgreSQL
+        via SQLAlchemy, with live motor current monitoring refreshed every
+        second.</li>
+        <li>Applied a Gradient Boosting model to score motor health
+        (0–100%) from live sensor data, enabling early detection of
+        equipment failures.</li>
+        <li>Implemented role-based access control and auto-logout to
+        strengthen system security.</li>
+        <li>Debugged backend logic and refined data pipelines to support
+        automated Work Order tracking, and optimized bulk queries for
+        faster processing.</li>
+        <li>Built interactive Plotly charts and exportable Excel reports
+        in close collaboration with the maintenance team.</li>
       </ul>
       <div class="wo-tags">
-        <span>LANDCROS</span><span>SQL</span><span>Data Visualization</span><span>Machine Learning</span>
+        <span>Python</span><span>Streamlit</span><span>PostgreSQL</span><span>Machine Learning</span>
+      </div>
+    </article>
+
+    <article class="work-order reveal">
+      <div class="wo-head">
+        <div>
+          <h3>Physics I Laboratory Assistant</h3>
+          <p class="wo-org">BINUS ASO School of Engineering</p>
+        </div>
+        <span class="wo-tag">Sep 2024 – Jan 2025</span>
+      </div>
+      <ul class="wo-list">
+        <li>Guided students through physics experiments, explaining
+        concepts clearly and enforcing proper lab and safety procedures.</li>
+        <li>Helped students structure accurate lab reports and gave
+        feedback to strengthen their understanding.</li>
+        <li>Maintained lab equipment and flagged issues promptly to keep
+        the space safe and functional.</li>
+      </ul>
+      <div class="wo-tags">
+        <span>Teaching</span><span>Lab Safety</span>
       </div>
     </article>
   </section>
 
-  <!-- ============ PROJECTS / SHEET 04 ============ -->
+  <!-- ============ LEADERSHIP / SHEET 04 ============ -->
+  <section class="sheet" id="leadership">
+    <h2>Leadership &amp; Organizations</h2>
+
+    <article class="work-order reveal">
+      <div class="wo-head">
+        <div>
+          <h3>Head of Learning Division</h3>
+          <p class="wo-org">Base C.O.R.E — BINUS ASO School of Engineering</p>
+        </div>
+        <span class="wo-tag">Aug 2024 – Aug 2025</span>
+      </div>
+      <ul class="wo-list">
+        <li>Led the Learning Division, designing robotics courses and
+        training programs for university students.</li>
+        <li>Managed a teaching team, developed course materials, and
+        mentored students for competitions and research.</li>
+        <li>Partnered with faculty and other divisions to align programs
+        with institutional goals, gathering feedback to keep improving
+        course quality.</li>
+      </ul>
+      <div class="wo-tags">
+        <span>Leadership</span><span>Curriculum Design</span><span>Mentoring</span>
+      </div>
+    </article>
+
+    <article class="work-order reveal">
+      <div class="wo-head">
+        <div>
+          <h3>Software Division Member</h3>
+          <p class="wo-org">AeroBASE — BINUS ASO School of Engineering</p>
+        </div>
+        <span class="wo-tag">Mar 2024 – Present</span>
+      </div>
+      <ul class="wo-list">
+        <li>Built an autonomous drone system with ROS2, integrated with
+        Pixhawk and NVIDIA Jetson for real-time navigation and control.</li>
+        <li>Implemented LiDAR-based sensor fusion and OpenCV for
+        obstacle-aware navigation and real-time gate/object detection.</li>
+        <li>Contributed to path-planning logic and optimized real-time
+        processing on Jetson for low-latency perception, working closely
+        with the hardware team.</li>
+      </ul>
+      <div class="wo-tags">
+        <span>ROS2</span><span>Jetson</span><span>Computer Vision</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ PROJECTS / SHEET 05 ============ -->
   <section class="sheet" id="projects">
-    <p class="eyebrow">Sheet 04 / 06 — Projects</p>
     <h2>Projects</h2>
 
     <div class="project-grid">
 
       <article class="card reveal">
         <p class="card-index">01</p>
-        <h3>Maintenance Monitoring System</h3>
-        <p>A set of internal dashboards — PM Achievement, Attendance, and
-        a Suggestion System — built on the LANDCROS platform to replace
-        manual Excel reporting across the Maintenance Division.</p>
-        <div class="card-tags"><span>Dashboards</span><span>BI</span><span>LANDCROS</span></div>
-        <a href="https://github.com/yourusername" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
+        <h3>Preventive Maintenance Dashboard</h3>
+        <p>A multi-module Streamlit dashboard backed by PostgreSQL,
+        tracking maintenance schedules, inspections, and suggestions —
+        with automated work-order syncing and role-based access.</p>
+        <div class="card-tags"><span>Streamlit</span><span>PostgreSQL</span><span>Dashboards</span></div>
+        <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
 
       <article class="card reveal">
         <p class="card-index">02</p>
-        <h3>Predictive Maintenance for ABB SCU-100</h3>
-        <p>A machine learning model trained on motor sensor data to
-        predict failure before it occurs, aimed at reducing unplanned
-        downtime.</p>
-        <div class="card-tags"><span>Python</span><span>Machine Learning</span><span>Sensors</span></div>
-        <a href="https://github.com/yourusername" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
+        <h3>Predictive Maintenance System</h3>
+        <p>A real-time dashboard monitoring six industrial motors every
+        second, using a Gradient Boosting model to score motor health
+        from live sensor features, with a background telemetry logger and
+        Excel export.</p>
+        <div class="card-tags"><span>Machine Learning</span><span>Streamlit</span><span>Real-time Monitoring</span></div>
+        <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
 
       <article class="card reveal">
         <p class="card-index">03</p>
-        <h3>Wind-Powered Walking Robot</h3>
-        <p>Built for the TMSUK Pre Summer Course: a Strandbeest/Klann-linkage
-        walker made from natural materials, powered entirely by wind —
-        no motors involved.</p>
-        <div class="card-tags"><span>Mechanism Design</span><span>Linkage Kinematics</span><span>Sustainability</span></div>
-        <a href="https://github.com/yourusername" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
+        <h3>NeoDex Arm</h3>
+        <p>A robotic arm on Raspberry Pi that sorts objects by color
+        using real-time OpenCV-based computer vision, with a full
+        perception-to-actuation pipeline tuned for precise, responsive
+        movement.</p>
+        <div class="card-tags"><span>Raspberry Pi</span><span>OpenCV</span><span>Robotics</span></div>
+        <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
 
       <article class="card reveal">
         <p class="card-index">04</p>
-        <h3>Bipedal Humanoid Robot</h3>
-        <p>A 14-servo bipedal robot with a 4-DOF-per-leg configuration,
-        driven by a dual-processor Raspberry Pi 5 + ESP32 architecture.
-        Joint brackets designed in OpenSCAD and 3D printed in PETG.</p>
-        <div class="card-tags"><span>Raspberry Pi</span><span>ESP32</span><span>OpenSCAD</span></div>
-        <a href="https://github.com/yourusername" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
+        <h3>AeroBASE Drone</h3>
+        <p>A fully autonomous drone built with ROS2, Pixhawk, and NVIDIA
+        Jetson, combining LiDAR-based obstacle awareness with OpenCV
+        vision for real-time gate detection and path tracking.</p>
+        <div class="card-tags"><span>ROS2</span><span>LiDAR</span><span>Computer Vision</span></div>
+        <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
 
       <article class="card reveal">
         <p class="card-index">05</p>
-        <h3>Personal Finance Planner</h3>
-        <p>A multi-sheet Excel model spanning 2025–2030, covering budget
-        tracking, an emergency fund, investments, and a dedicated savings
-        tracker for a Japan trip.</p>
-        <div class="card-tags"><span>Excel</span><span>Financial Modeling</span></div>
-        <a href="https://github.com/yourusername" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
+        <h3>VIERAC</h3>
+        <p>Versatile Intelligent Engine Robotic Arm Car — a mobile
+        robotic arm on omni-wheels and Raspberry Pi 5, pairing
+        camera-based object detection with semi-autonomous arm control.</p>
+        <div class="card-tags"><span>Raspberry Pi 5</span><span>Computer Vision</span><span>Mobile Robotics</span></div>
+        <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
 
       <article class="card reveal">
         <p class="card-index">06</p>
-        <h3>Competitive Programming</h3>
-        <p>Ongoing practice across greedy, dynamic programming, and
-        SQL-based problems — mostly on LeetCode, focused on writing
-        correct solutions first, then efficient ones.</p>
-        <div class="card-tags"><span>Algorithms</span><span>SQL</span><span>Problem Solving</span></div>
-        <a href="https://leetcode.com/yourusername" class="card-link" target="_blank" rel="noopener">Profile ↗</a>
+        <h3>SPRINKY</h3>
+        <p>Sprinkler Buddy — a smart autonomous sprinkler on Arduino UNO
+        with line-following navigation and obstacle detection, built as
+        a low-cost embedded irrigation solution.</p>
+        <div class="card-tags"><span>Arduino</span><span>Embedded Systems</span></div>
+        <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
+      </article>
+
+      <article class="card reveal">
+        <p class="card-index">07</p>
+        <h3>Emotion Voice Recognition</h3>
+        <p>A voice-based emotion classifier using DSP feature extraction
+        (MFCC) and an SVM model, reaching 98% accuracy across multiple
+        emotional states.</p>
+        <div class="card-tags"><span>DSP</span><span>Machine Learning</span><span>SVM</span></div>
+        <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
 
     </div>
   </section>
 
-  <!-- ============ SKILLS / SHEET 05 ============ -->
+  <!-- ============ SKILLS / SHEET 06 ============ -->
   <section class="sheet" id="skills">
-    <p class="eyebrow">Sheet 05 / 06 — Skills</p>
     <h2>Skills</h2>
 
     <div class="skill-groups">
       <div class="skill-group reveal">
-        <h4>Data &amp; Dashboards</h4>
-        <div class="chips">
-          <span>SQL</span><span>Excel / VBA</span><span>LANDCROS</span><span>Data Visualization</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4>Robotics &amp; Hardware</h4>
-        <div class="chips">
-          <span>Raspberry Pi</span><span>ESP32</span><span>OpenSCAD</span><span>3D Printing (PETG)</span><span>Servo Control</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
         <h4>Programming</h4>
         <div class="chips">
-          <span>Python</span><span>Algorithms &amp; Data Structures</span><span>Machine Learning basics</span>
+          <span>C</span><span>C++</span><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Frameworks &amp; Libraries</h4>
+        <div class="chips">
+          <span>OpenCV</span><span>ROS2</span><span>TensorFlow</span><span>Keras</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Streamlit</span><span>Plotly</span><span>SQLAlchemy</span><span>OpenPyXL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Embedded &amp; Hardware</h4>
+        <div class="chips">
+          <span>Raspberry Pi</span><span>Jetson</span><span>ESP32</span><span>Arduino</span><span>Linux</span><span>MQTT</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Cloud, Database &amp; Tools</h4>
+        <div class="chips">
+          <span>PostgreSQL</span><span>Google Cloud</span><span>MATLAB</span><span>i-Reporter</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Soft Skills</h4>
+        <div class="chips">
+          <span>Leadership</span><span>Teamwork</span><span>Critical Thinking</span><span>Effective Communication</span><span>Proactive</span><span>Responsible</span>
         </div>
       </div>
       <div class="skill-group reveal">
         <h4>Languages</h4>
         <div class="chips">
-          <span>Indonesian — native</span><span>English — professional</span><span>Japanese — basic, in progress</span>
+          <span>Bahasa Indonesia — native</span><span>English — professional</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CONTACT / SHEET 06 ============ -->
+  <!-- ============ CONTACT / SHEET 07 ============ -->
   <section class="sheet" id="contact">
-    <p class="eyebrow">Sheet 06 / 06 — Contact</p>
     <h2>Get in touch</h2>
     <p class="contact-lede">Open to internship, collaboration, or just a
     conversation about robots and dashboards.</p>
 
     <div class="contact-links">
-      <a href="mailto:youremail@example.com">Email ↗</a>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nathanaelfrederick21@gmail.com" target="_blank" rel="noopener">Email ↗</a>
+      <a href="https://github.com/EryckzerZ" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://linkedin.com/in/nathanfred" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://instagram.com/nthn_frdrick" target="_blank" rel="noopener">Instagram ↗</a>
     </div>
   </section>
 
 </main>
 
 <footer class="rev-block">
-  <div class="rev-table">
-    <div class="rev-row rev-head">
-      <span>Rev</span><span>Date</span><span>Description</span>
-    </div>
-    <div class="rev-row">
-      <span>A</span><span>2026</span><span>Initial release</span>
-    </div>
-  </div>
-  <p class="rev-note">© <span id="year"></span> Nathanael Frederick Kristandi. Built with plain HTML, CSS &amp; JS.</p>
+  <p class="rev-note">© <span id="year"></span> Nathanael Frederick Kristandi.</p>
 </footer>
 
 <script src="script.js"></script>
