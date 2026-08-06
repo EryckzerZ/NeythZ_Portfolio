@@ -379,7 +379,7 @@ main{ max-width:var(--max); margin:0 auto; padding:0 var(--edge); }
 .contact-links{ display:flex; gap:28px; flex-wrap:wrap; }
 .contact-links a{
   font-family:var(--mono); font-size:15px; text-decoration:none; color:var(--blue);
-  border-bottom:1px solid transparent;
+  border-bottom:1px solid transparent; 
 }
 .contact-links a:hover{ border-bottom-color:var(--blue); }
 .contact-illustration{ display:flex; justify-content:center; }
