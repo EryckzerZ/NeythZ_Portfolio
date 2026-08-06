@@ -6,7 +6,7 @@ maintenance during my internship at Hitachi Construction Machinery
 Indonesia, to hands-on robotics projects like a wind-powered walking
 mechanism and a bipedal humanoid robot.
 
-**Live site:** [EryckzerZ.github.io](https://eryckzerz.github.io/NeythZ_Portfolio/)
+**Live site:** [EryckzerZ.github.io](https://EryckzerZ.github.io)
 
 ## Sections
 

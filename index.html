@@ -4,7 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nathanael Frederick Kristandi — Portfolio</title>
-<meta name="description" content="Portfolio of Nathanael Frederick Kristandi — Automotive & Robotics Engineering student working across embedded systems, robotics, and machine learning.">
+<meta name="description" content="Portfolio of Nathanael Frederick Kristandi — Automotive & Robotics Engineering student building robots, dashboards, and machine learning projects.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231F4E79%27/%3E%3Ctext%20x%3D%2716%27%20y%3D%2722%27%20font-family%3D%27monospace%27%20font-size%3D%2714%27%20font-weight%3D%27600%27%20fill%3D%27white%27%20text-anchor%3D%27middle%27%3ENF%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nathanael Frederick Kristandi — Portfolio">
+<meta property="og:description" content="Automotive & Robotics Engineering student building robots, dashboards, and machine learning projects.">
+<meta property="og:url" content="https://eryckzerz.github.io/NeythZ_Portfolio/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nathanael Frederick Kristandi — Portfolio">
+<meta name="twitter:description" content="Automotive & Robotics Engineering student building robots, dashboards, and machine learning projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,6 +28,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 <div class="frame-tick tl" aria-hidden="true"></div>
 <div class="frame-tick tr" aria-hidden="true"></div>
@@ -51,13 +62,12 @@
     <div class="hero-grid">
       <div class="hero-text">
         <h1>Nathanael Frederick<br>Kristandi</h1>
-        <p class="role">Automotive &amp; Robotics Engineering student —
-        interested in robotics, machine learning, and embedded systems.</p>
-        <p class="lede">Final-year student at BINUS University, with
-        hands-on experience building robots, dashboards, and machine
-        learning models through academic projects and industry
-        internships. I also enjoy mentoring — leading robotics training
-        programs for fellow students.</p>
+        <p class="role">Automotive &amp; Robotics Engineering student,
+        focused on robotics, embedded systems, and machine learning.</p>
+        <p class="lede">Final-year student at BINUS University. I build
+        robots, dashboards, and machine learning tools — turning hard
+        problems into working systems. I also lead robotics training for
+        fellow students.</p>
         <div class="hero-links">
           <a class="btn btn-primary" href="#projects">View projects</a>
           <a class="btn btn-ghost" href="https://github.com/EryckzerZ" target="_blank" rel="noopener">GitHub ↗</a>
@@ -99,10 +109,6 @@
 
           <circle cx="70" cy="130" r="3" class="pulse-dot pulse-1"/>
           <circle cx="210" cy="163" r="3" class="pulse-dot pulse-2"/>
-
-          <text x="70" y="345" text-anchor="middle" class="cap-label">input</text>
-          <text x="210" y="345" text-anchor="middle" class="cap-label">hidden</text>
-          <text x="350" y="345" text-anchor="middle" class="cap-label">output</text>
         </svg>
       </div>
     </div>
@@ -114,17 +120,18 @@
     <div class="about-grid">
       <p class="about-text">
         I'm a final-year Automotive &amp; Robotics Engineering student at
-        BINUS University, with hands-on experience across embedded
-        systems, robotics, and machine learning. I like turning ideas into
-        working systems — whether that's a dashboard, a predictive model,
-        or a robot — and I've had the chance to lead teams and ship
-        results in both academic and professional settings.
+        BINUS University. I have hands-on experience in embedded systems,
+        robotics, and machine learning. I enjoy turning ideas into real,
+        working systems — a dashboard, a predictive model, or a robot —
+        and I've led teams to deliver results in both school projects and
+        real jobs.
       </p>
       <dl class="spec-list">
         <div><dt>Based in</dt><dd>Tangerang, Indonesia</dd></div>
         <div><dt>Institution</dt><dd>BINUS University — ASO School of Engineering</dd></div>
         <div><dt>Program</dt><dd>Automotive &amp; Robotics Engineering</dd></div>
         <div><dt>Focus</dt><dd>Embedded Systems · Robotics · ML</dd></div>
+        <div><dt>Certifications</dt><dd>Kaggle Python (2023) · Lab Assistant Award (2025)</dd></div>
       </dl>
     </div>
   </section>
@@ -242,9 +249,9 @@
       <article class="card reveal">
         <p class="card-index">01</p>
         <h3>Preventive Maintenance Dashboard</h3>
-        <p>A multi-module Streamlit dashboard backed by PostgreSQL,
-        tracking maintenance schedules, inspections, and suggestions —
-        with automated work-order syncing and role-based access.</p>
+        <p>A Streamlit dashboard backed by PostgreSQL. It tracks
+        maintenance schedules, inspections, and suggestions, with
+        automatic work-order syncing and role-based access.</p>
         <div class="card-tags"><span>Streamlit</span><span>PostgreSQL</span><span>Dashboards</span></div>
         <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
@@ -252,10 +259,9 @@
       <article class="card reveal">
         <p class="card-index">02</p>
         <h3>Predictive Maintenance System</h3>
-        <p>A real-time dashboard monitoring six industrial motors every
-        second, using a Gradient Boosting model to score motor health
-        from live sensor features, with a background telemetry logger and
-        Excel export.</p>
+        <p>A real-time dashboard that watches six industrial motors
+        every second. A Gradient Boosting model scores motor health from
+        live sensor data, with a background logger and Excel export.</p>
         <div class="card-tags"><span>Machine Learning</span><span>Streamlit</span><span>Real-time Monitoring</span></div>
         <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
@@ -264,9 +270,8 @@
         <p class="card-index">03</p>
         <h3>NeoDex Arm</h3>
         <p>A robotic arm on Raspberry Pi that sorts objects by color
-        using real-time OpenCV-based computer vision, with a full
-        perception-to-actuation pipeline tuned for precise, responsive
-        movement.</p>
+        using real-time computer vision (OpenCV), with a full pipeline
+        from seeing to moving, tuned for precise control.</p>
         <div class="card-tags"><span>Raspberry Pi</span><span>OpenCV</span><span>Robotics</span></div>
         <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
@@ -275,8 +280,8 @@
         <p class="card-index">04</p>
         <h3>AeroBASE Drone</h3>
         <p>A fully autonomous drone built with ROS2, Pixhawk, and NVIDIA
-        Jetson, combining LiDAR-based obstacle awareness with OpenCV
-        vision for real-time gate detection and path tracking.</p>
+        Jetson. It uses LiDAR to avoid obstacles and OpenCV to detect
+        gates and track its path in real time.</p>
         <div class="card-tags"><span>ROS2</span><span>LiDAR</span><span>Computer Vision</span></div>
         <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
@@ -284,9 +289,9 @@
       <article class="card reveal">
         <p class="card-index">05</p>
         <h3>VIERAC</h3>
-        <p>Versatile Intelligent Engine Robotic Arm Car — a mobile
-        robotic arm on omni-wheels and Raspberry Pi 5, pairing
-        camera-based object detection with semi-autonomous arm control.</p>
+        <p>Versatile Intelligent Engine Robotic Arm Car — a mobile robot
+        arm on omni-wheels and Raspberry Pi 5. It pairs camera-based
+        object detection with semi-autonomous arm control.</p>
         <div class="card-tags"><span>Raspberry Pi 5</span><span>Computer Vision</span><span>Mobile Robotics</span></div>
         <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
@@ -294,9 +299,9 @@
       <article class="card reveal">
         <p class="card-index">06</p>
         <h3>SPRINKY</h3>
-        <p>Sprinkler Buddy — a smart autonomous sprinkler on Arduino UNO
-        with line-following navigation and obstacle detection, built as
-        a low-cost embedded irrigation solution.</p>
+        <p>Sprinkler Buddy — a smart, autonomous sprinkler on Arduino
+        UNO. It follows a line and avoids obstacles, built as a low-cost
+        way to water plants automatically.</p>
         <div class="card-tags"><span>Arduino</span><span>Embedded Systems</span></div>
         <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
@@ -304,9 +309,9 @@
       <article class="card reveal">
         <p class="card-index">07</p>
         <h3>Emotion Voice Recognition</h3>
-        <p>A voice-based emotion classifier using DSP feature extraction
-        (MFCC) and an SVM model, reaching 98% accuracy across multiple
-        emotional states.</p>
+        <p>A voice-based emotion classifier. It extracts audio features
+        (MFCC) and uses an SVM model, reaching 98% accuracy across
+        several emotions.</p>
         <div class="card-tags"><span>DSP</span><span>Machine Learning</span><span>SVM</span></div>
         <a href="https://github.com/EryckzerZ" class="card-link" target="_blank" rel="noopener">Repository ↗</a>
       </article>
@@ -361,14 +366,45 @@
   <!-- ============ CONTACT / SHEET 07 ============ -->
   <section class="sheet" id="contact">
     <h2>Get in touch</h2>
-    <p class="contact-lede">Open to internship, collaboration, or just a
-    conversation about robots and dashboards.</p>
+    <div class="contact-grid">
+      <div class="contact-content">
+        <p class="contact-lede">Open to internships, collaborations, or a
+        quick chat about robots and machine learning.</p>
 
-    <div class="contact-links">
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nathanaelfrederick21@gmail.com" target="_blank" rel="noopener">Email ↗</a>
-      <a href="https://github.com/EryckzerZ" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="https://linkedin.com/in/nathanfred" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://instagram.com/nthn_frdrick" target="_blank" rel="noopener">Instagram ↗</a>
+        <div class="contact-links">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nathanaelfrederick21@gmail.com" target="_blank" rel="noopener">Email ↗</a>
+          <a href="https://github.com/EryckzerZ" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://linkedin.com/in/nathanfred" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://instagram.com/nthn_frdrick" target="_blank" rel="noopener">Instagram ↗</a>
+        </div>
+      </div>
+
+      <div class="contact-illustration" aria-hidden="true">
+        <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" class="arm-illustration-svg">
+          <circle cx="245" cy="190" r="150" class="robot-halo"/>
+          <path d="M150 300h120l14 22H136z" class="arm-base"/>
+          <rect x="172" y="272" width="76" height="30" rx="3" class="arm-plinth"/>
+          <circle cx="210" cy="272" r="12" class="arm-joint arm-joint-main"/>
+
+          <g class="arm-shoulder">
+            <path d="M210 272L245 190" class="arm-link arm-link-main"/>
+            <circle cx="245" cy="190" r="15" class="arm-joint arm-joint-main"/>
+
+            <g class="arm-elbow">
+              <path d="M245 190L310 130" class="arm-link arm-link-main"/>
+              <circle cx="310" cy="130" r="13" class="arm-joint arm-joint-main"/>
+
+              <g class="arm-wrist">
+                <path d="M310 130L355 105" class="arm-link arm-link-accent"/>
+                <circle cx="355" cy="105" r="10" class="arm-joint arm-joint-accent"/>
+                <path d="M355 105l13-10m-13 10l15 5m-2-15l9-7m-7 22l11 4" class="arm-gripper"/>
+                <path d="M382 68h18m-9-9v18" class="target-mark"/>
+                <circle cx="391" cy="68" r="4" class="status-dot"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -377,6 +413,23 @@
 <footer class="rev-block">
   <p class="rev-note">© <span id="year"></span> Nathanael Frederick Kristandi.</p>
 </footer>
+
+<button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+    </button>
+    <p class="modal-index" id="modalIndex"></p>
+    <h3 id="modalTitle"></h3>
+    <p class="modal-desc" id="modalDesc"></p>
+    <div class="modal-tags" id="modalTags"></div>
+    <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noopener">Repository ↗</a>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
