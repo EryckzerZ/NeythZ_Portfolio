@@ -374,6 +374,7 @@ main{ max-width:var(--max); margin:0 auto; padding:0 var(--edge); }
 
 /* ===== Contact ===== */
 .contact-grid{ display:grid; grid-template-columns:1.2fr 1fr; gap:48px; align-items:center; }
+.contact-content{ min-width:0; }
 .contact-lede{ color:var(--ink-soft); max-width:44ch; margin-bottom:28px; display:block; }
 .contact-links{ display:flex; gap:28px; flex-wrap:wrap; }
 .contact-links a{
